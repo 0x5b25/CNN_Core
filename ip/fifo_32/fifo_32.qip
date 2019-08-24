@@ -1,0 +1,9 @@
+set_global_assignment -name IP_TOOL_NAME "FIFO"
+set_global_assignment -name IP_TOOL_VERSION "18.0"
+set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Stratix IV}"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "fifo_32.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "fifo_32.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "fifo_32_inst.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "fifo_32_bb.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "fifo_32.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "fifo_32.cmp"]

@@ -1,0 +1,9 @@
+set_global_assignment -name IP_TOOL_NAME "ALTFP_ADD_SUB"
+set_global_assignment -name IP_TOOL_VERSION "18.0"
+set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Stratix IV}"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "fpadd.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "fpadd.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "fpadd_inst.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "fpadd_bb.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "fpadd.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "fpadd.cmp"]

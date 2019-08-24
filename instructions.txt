@@ -1,0 +1,34 @@
+reset //stop all operations and reset system
+8
+
+load len [src(r0)] dst //load data from external to internal buffer
+8    12            12
+
+store len src [dst(r0)] //store internal buffer to external
+8     12  12
+
+loadweight width height src //load weight data from internal buffer to processing array
+8          4     4      16
+
+doconv | ldp | tobuf //do convolution calculation, uses conv descriptor:
+8      | 1   | 1
+    conv descriptor:
+       +----------+----------+-------------+
+    r0 | Height   | Width    |             |
+       +----------+----------+ Input data  |
+    r1 | Pointer             |             |
+       +----------+----------+-------------+
+    r2 | Height   | Width    |             |
+       +----------+----------+ Weight data |
+    r3 | Pointer             |             |
+       +----------+----------+-------------+
+    r4 | Data                | Bias data   |
+       +---------------------+-------------+
+    r5 | Pointer             | Destination |
+       +---------------------+-------------+
+
+
+0 - 15: gpregs
+16:instruction register
+17:config register
+18:status register

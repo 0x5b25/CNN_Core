@@ -1,0 +1,9 @@
+set_global_assignment -name IP_TOOL_NAME "RAM: 2-PORT"
+set_global_assignment -name IP_TOOL_VERSION "18.0"
+set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Stratix IV}"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "dpram_4096x32.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "dpram_4096x32.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "dpram_4096x32_inst.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "dpram_4096x32_bb.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "dpram_4096x32.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "dpram_4096x32.cmp"]

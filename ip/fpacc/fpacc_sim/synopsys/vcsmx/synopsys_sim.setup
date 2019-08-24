@@ -1,0 +1,13 @@
+
+WORK > DEFAULT
+DEFAULT:            ./libraries/work/              
+work:               ./libraries/work/              
+altera:             ./libraries/altera/            
+lpm:                ./libraries/lpm/               
+sgate:              ./libraries/sgate/             
+altera_mf:          ./libraries/altera_mf/         
+altera_lnsim:       ./libraries/altera_lnsim/      
+stratixiv_hssi:     ./libraries/stratixiv_hssi/    
+stratixiv_pcie_hip: ./libraries/stratixiv_pcie_hip/
+stratixiv:          ./libraries/stratixiv/         
+LIBRARY_SCAN = TRUE
